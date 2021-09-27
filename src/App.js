@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import Gallery from './page/Gallery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ul></ul>
+      <div id='page'>
+        {/* TODO: 현재는 Gallery 컴포넌트만 보이지만, URL에 의해 컴포넌트가 다르게 보여야 합니다. */}
+        <Gallery></Gallery>
+      </div>
     </div>
   );
 }

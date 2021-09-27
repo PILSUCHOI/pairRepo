@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Section 1: Hiring Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이번 Section 1: Hiring Assessment에서는 React를 이용한 갤러리 앱을 만듭니다. 주요 특징은 다음과 같습니다.
 
-## Available Scripts
+- Single Page Application으로, 페이지 두 개(About, Gallery 컴포넌트)가 존재합니다.
+- Gallery 컴포넌트에서는 사진 목록이 썸네일로 존재하고, 썸네일 이미지를 클릭하면 크게 보이는 앱입니다.
 
-In the project directory, you can run:
+![goals](https://user-images.githubusercontent.com/12145019/134956267-90628f6d-bed8-4b10-9841-891759eadb3f.gif)
 
-### `yarn start`
+## How to HA
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 의존성 모듈 설치
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `npm install`을 이용해 의존성 모듈(dependencies)를 설치합니다.
 
-### `yarn test`
+### 애플리케이션 실행
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `npm start` npm script를 이용해 클라이언트 앱을 실행합니다.
+  - Gallery 컴포넌트를 눈으로 확인할 수 있습니다.
+  - 테스트 후반에 이르러서는 조건에 따른 라우팅을 적용해야 Gallery 컴포넌트를 확인할 수 있습니다.
 
-### `yarn build`
+### 애플리케이션 테스트
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm test`를 통해 테스트를 진행할 수 있습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 과제 제출
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm run submit`으로 과제를 제출합니다.
 
-### `yarn eject`
+- 주어진 시간 내 과제를 제출하세요.
+  - 과제는 여러 번 제출할 수 있습니다.
+  - Bare Minimum Requirements를 모두 통과하면 과제를 1차로 제출하세요.
+  - Bare Minimum Requirements를 모두 하지 못했어도 제출하세요. (제출 내역이 없으면 0점 처리됩니다.)
+  - Bare Minimum Requirements를 모두 통과하고 제출했으면, Advanced Challenge에 도전하세요.
+    - `src/__test__/index.test.js`의 주석을 참고하여 Advanced Challenge를 시작할 수 있습니다.
+  - Advanced Challenge도 같은 npm script로 제출해 주세요. (`npm run submit`)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- 테스트 케이스(`src/__test__` 이하 파일)를 수정하지 마세요.
+  - 테스트 케이스에 문제가 있다고 판단되는 경우, 이슈 쉐어링로 제보 부탁드립니다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Bare Minimum Requirements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+주어진 모든 테스트를 통과하세요.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Component unit test
+  - 각 컴포넌트의 기능을 테스트합니다.
+  - Thumbnail, Gallery, App
 
-## Learn More
+## Advanced Challenge
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Advanced Challenge는 섹션 1에서 배운 내용과 배우지 않은 내용을 스스로 평가할 수 있도록 제작되었습니다.
+자신의 실력과 자기주도적 학습 능력을 보다 정확하게 확인할 수 있는 좋은 기회입니다. 풀 수 있는 데까지 도전해 보세요.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Bare Minimum Requirement에서 Todo 기능을 추가합니다.
+  - Todo 컴포넌트 제작
+  - 페이지 라우팅에 Todo 컴포넌트 추가
+  - Todo Create, Delete, Mark 기능 구현
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Advanced Challenge는 HA 심사 평가에 반영하지 않습니다.
+> Bare Minimum Requirements를 모두 통과하고 진행해 주세요.
+> `src/__test__/index.test.js`의 주석을 참고하여 Advanced Challenge를 시작할 수 있습니다.
