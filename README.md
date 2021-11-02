@@ -36,7 +36,7 @@
   - Advanced Challenge도 같은 npm script로 제출해 주세요. (`npm run submit`)
 
 - 테스트 케이스(`src/__test__` 이하 파일)를 수정하지 마세요.
-  - 테스트 케이스에 문제가 있다고 판단되는 경우, 이슈 쉐어링로 제보 부탁드립니다.
+  - 테스트 케이스에 문제가 있다고 판단되는 경우, 이슈 쉐어링으로 제보 부탁드립니다.
 
 ## Bare Minimum Requirements
 
