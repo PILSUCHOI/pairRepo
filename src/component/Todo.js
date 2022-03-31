@@ -3,13 +3,13 @@ function Todo({ todos, completeTodo, removeTodo }) {
     <div className='wrapper-todo'>
       {todos.map((todo) => {
         /* TODO: line-through를 해주는 표현식을 todoClass 변수에 담습니다. */
-        let todoClass = 'todo-row';
-
+        let todoClass = 'todo-row'
+      
         return (
           <div className={todoClass} key={todo.id}>
-            <div onClick={''}>{todo.text}</div>
+            <div onClick={completeTodo}>{todo.text}</div>
             <div className='icons'>
-              <i className='fas fa-times delete-icon' onClick={''}></i>
+              <i className='fas fa-times delete-icon' onClick={()=>{removeTodo(todo.id)}}></i>
             </div>
           </div>
         );
