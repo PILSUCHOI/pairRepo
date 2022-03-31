@@ -13,6 +13,6 @@ describe('App 컴포넌트 테스트', () => {
 });
 
 // Advanced Challenge 도전을 위해서 describe.skip을 describe로 변경하세요.
-describe.skip('Todos 컴포넌트 테스트', () => {
+describe('Todos 컴포넌트 테스트', () => {
   require('./Todos.test');
 });

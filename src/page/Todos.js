@@ -1,11 +1,17 @@
 /* TODO: TodoForm, Todo 컴포넌트를 불러옵니다. */
 import TodoForm from '../component/TodoForm';
+import Todo from '../component/Todo';
+import {useState} from 'react'
 
 function Todos() {
   /* TODO: 리스트를 담을 state를 생성합니다. */
+  const [todoList, setTodoList] = useState([]);
 
-  const addTodo = () => {
+  const addTodo = (content) => {
     /* TODO: Todo를 생성할 메소드를 만듭니다. */
+    let objContent = {'id': todoList.length, 'text': content};
+    setTodoList([...todoList,objContent]);
+    console.log(todoList);
   };
 
   const removeTodo = () => {
@@ -21,9 +27,10 @@ function Todos() {
       <div className='todo-app'>
         <h1>To Do List</h1>
         <h2>오늘은 무슨 일을 계획하나요?</h2>
-        <TodoForm />
+        <TodoForm onSubmit={addTodo}/>
         {/* TODO: TodoForm 컴포넌트를 연결합니다. */}
         {/* TODO: Todo 컴포넌트를 연결한 뒤, 생성한 메소드를 prop으로 보냅니다. */}
+        <Todo todos={todoList}/>
       </div>
     </div>
   );
